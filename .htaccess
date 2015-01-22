@@ -1,0 +1,22 @@
+# -FrontPage-
+
+ErrorDocument 404 /error.htm
+ErrorDocument 401 /error.htm
+ErrorDocument 500 /error.htm
+Options -Indexes
+AddDefaultCharset utf-8
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName bakemission.wpcdev2.com
+AuthUserFile /home/bakemissionwpcde/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/bakemissionwpcde/public_html/_vti_pvt/service.grp

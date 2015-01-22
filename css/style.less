@@ -1,0 +1,227 @@
+@maincolor: #3498db;
+@maintime: 0ms;
+@lightcolor: rgba(52, 152, 219, 0.3);
+// Transition mixin
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+a, a:hover, a:focus {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+
+/* *** General Classes *** */
+.color {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+/* Main Color used principally in the Titles */
+.img-border {
+	border-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+}
+
+		/* *** MENU *** */
+.navbar-default .navbar-brand {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+#mainmenubar {
+	border-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+}
+#navtabs_menubar {
+	background-color: @maincolor;
+	.transition(background-color @maintime ease-in-out);
+}
+#isotope_filtersbar {
+	background-color: @maincolor;
+	.transition(background-color @maintime ease-in-out);
+}
+		/* *** MENU END *** */
+
+
+		/* *** SLIDE *** */
+.slide-active {
+	background-color: @maincolor;
+	.transition(background-color @maintime ease-in-out);
+}
+.msg-ulysses {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+		/* *** SLIDE END *** */
+		
+		/* *** SECTION *** */
+.section {
+	background-color: @maincolor;
+	.transition(background-color @maintime ease-in-out);
+}
+
+
+.sub-section-border {
+	border-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+}
+		/* *** SECTION END *** */
+
+
+		/* *** TABS *** */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+
+	border-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+}
+.nav-tabs {
+	border-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+}
+		/* *** TABS END *** */
+		
+		/* *** PROGRESS BARS *** */
+.progress {
+	background-color: @lightcolor;
+	.transition(background-color @maintime ease-in-out);
+}
+.progress-bar {
+	background-color: @maincolor;
+	.transition(background-color @maintime ease-in-out);
+}
+		/* *** PROGRESS BARS END *** */
+		
+		/* *** CTA *** */
+.cta-border {
+	border-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+}
+.cta-title {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+		/* *** CTA END *** */
+		
+		/* *** BUTTONS *** */
+.btn-primary {
+	background-color: @maincolor;
+	border-color: @maincolor;
+	.transition(color @maintime ease-in-out);
+	.transition(background-color @maintime ease-in-out);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+	background-color: @maincolor;
+	border-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+	.transition(background-color @maintime ease-in-out);
+}
+.btn-default-header:hover, .btn-default-header:focus, .btn-default-header:active, .btn-default-header.active, .open .dropdown-toggle.btn-default {
+	background-color: @maincolor;
+	border-color: @maincolor;	
+	.transition(border @maintime ease-in-out);
+	.transition(background-color @maintime ease-in-out);
+}
+.btn-default {
+	color: @maincolor;
+	border-color: @maincolor;	
+	.transition(color @maintime ease-in-out);
+	.transition(border @maintime ease-in-out);
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+	background-color: @maincolor;
+	border-color: @maincolor;	
+	.transition(border @maintime ease-in-out);
+	.transition(background-color @maintime ease-in-out);
+}
+		/* *** BUTTONS END *** */
+				
+		/* *** PRICING TABLES *** */
+
+.pricing-table-icon {
+	color: @maincolor;	
+	.transition(color @maintime ease-in-out);
+}
+.pricing-table h3 {
+	background: @maincolor;
+	.transition(background-color @maintime ease-in-out);
+}
+.price, .price-icon {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+.pricing-table-button {
+	background: @maincolor;
+	.transition(background-color @maintime ease-in-out);
+}
+
+.pricing-table .btn {
+	background: @maincolor;
+	.transition(background-color @maintime ease-in-out);
+}
+		/* *** PRICING TABLES END *** */
+		
+		/* *** ICONS *** */
+.icon-one, .icon-two {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+
+		/* *** ICONS *** */
+		
+		/* *** SECOND PARALLAX *** */
+
+.parallax-quote-icon {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+		/* *** SECOND PARALLAX END *** */
+
+		
+		/* *** GALLERY *** */
+.gallery-icon {
+	background: @maincolor; 
+	.transition(background-color @maintime ease-in-out);
+}
+		/* *** GALLERY END *** */
+		
+		/* *** FOOTER *** */
+
+.dashed-border {
+	color: @maincolor; 
+	border-color: @maincolor;
+	.transition(color @maintime ease-in-out);
+	.transition(border @maintime ease-in-out);
+}
+		/* *** FOOTER END *** */
+		
+/*ANIMATION*/
+.form-control:focus {
+	border-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+}
+.footer-icon:hover {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+.icon:hover {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
+.pricing-table-button:hover {
+	background-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+}
+.pricing-table:hover {
+	background-color: @maincolor;
+	.transition(border @maintime ease-in-out);
+}
+.pricing-table:hover > .caption .btn {
+	color: @maincolor;
+	.transition(color @maintime ease-in-out);
+}
